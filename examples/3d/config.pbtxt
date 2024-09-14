@@ -1,0 +1,26 @@
+name: "unet"
+platform: "pytorch_libtorch"
+
+max_batch_size: 1
+input [
+ {
+    name: "INPUT__0"
+    data_type: TYPE_FP32
+    dims: [ 1, 512, 512, 64 ]
+  }
+]
+
+output [
+ {
+    name: "OUTPUT__0"
+    data_type: TYPE_FP32
+    dims: [ 1, 512, 512, 64 ]
+  }
+]
+
+instance_group [
+    {
+        kind: KIND_CPU
+        count: 1
+    }
+]
