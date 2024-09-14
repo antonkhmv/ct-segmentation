@@ -1,6 +1,6 @@
 # CT Segmentation
 
-CT image segmentation using DL in Pytorch. Used in a project 
+CT image segmentation using DL in Pytorch. Used in a group project in HSE University
 
 # Train
 
